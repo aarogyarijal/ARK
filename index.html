@@ -20,7 +20,7 @@
                 init: function() {
 		    console.log('video init entered');
                     this.toggle = false;
-                    this.vid = document.querySelector("#invitation");
+                    this.vid = document.querySelector("#aarogya");
                     this.vid.pause();
                 },
                 tick: function() {
@@ -35,6 +35,13 @@
                     }
                 }
             });
+		 AFRAME.registerComponent('video-vidhandler', {
+                init: function() {
+		    console.log('video init entered');
+                    this.toggle = false;
+                    this.vid = document.querySelector("#sashank");
+                    this.vid.play();
+                },
 		
          </script>
     </head>
